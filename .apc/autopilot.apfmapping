@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="main.c" path="D:\Aeld_data\IP_Creation\unique_paths\main.c"/>
+    <originFiles name="header.h" path="D:\Aeld_data\IP_Creation\unique_paths\header.h"/>
+  </source>
+  <testbench>
+    <originFiles name="test.c" path="D:\Aeld_data\IP_Creation\unique_paths\test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

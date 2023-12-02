@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;unique_paths/main.c&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:35 . Memory (MB): peak = 184.895 ; gain = 93.438"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:35 . Memory (MB): peak = 184.895 ; gain = 93.438"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:46 . Memory (MB): peak = 184.895 ; gain = 93.438"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:47 . Memory (MB): peak = 184.895 ; gain = 93.438"/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_310" tag="" content="Unrolling loop &apos;Loop-1&apos; (unique_paths/main.c:13) in function &apos;unique_paths&apos; partially with a factor of 2."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_310" tag="" content="Unrolling loop &apos;Loop-2&apos; (unique_paths/main.c:19) in function &apos;unique_paths&apos; partially with a factor of 2."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_310" tag="" content="Unrolling loop &apos;Loop-3.1&apos; (unique_paths/main.c:27) in function &apos;unique_paths&apos; partially with a factor of 2."/>
+	<Message severity="WARNING" prefix="[XFORM 203-104]" key="XFORM_PARTITION_VAR_INDEX_118" tag="ARRAY,SDX_ARRAY" content="Completely partitioning array &apos;dp&apos; (unique_paths/main.c:10) accessed through non-constant indices on dimension 1 (unique_paths/main.c:43:6), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;dp&apos; (unique_paths/main.c:10) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (unique_paths/main.c:37:4) to (unique_paths/main.c:45:4) in function &apos;unique_paths&apos;... converting 5 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (unique_paths/main.c:37:4) to (unique_paths/main.c:45:4) in function &apos;unique_paths&apos;... converting 5 basic blocks."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:51 . Memory (MB): peak = 184.895 ; gain = 93.438"/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;Loop-3&apos; (unique_paths/main.c:25:6) in function &apos;unique_paths&apos; : 
+
+the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:57 . Memory (MB): peak = 191.141 ; gain = 99.684"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;unique_paths&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;unique_paths&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;unique_paths&apos; (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between &apos;store&apos; operation (&apos;dp_99_addr_write_ln17&apos;, unique_paths/main.c:17) of constant 1 on array &apos;dp[99]&apos;, unique_paths/main.c:10 and &apos;store&apos; operation (&apos;dp_99_addr_write_ln17&apos;, unique_paths/main.c:17) of constant 1 on array &apos;dp[99]&apos;, unique_paths/main.c:10."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 2, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 1."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 3.1&apos;."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;unique_paths&apos; (Loop: Loop 3.1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between &apos;store&apos; operation (&apos;dp_0_addr_6_write_ln45&apos;, unique_paths/main.c:45) of variable &apos;add_ln45_1&apos;, unique_paths/main.c:45 on array &apos;dp[0]&apos;, unique_paths/main.c:10 and &apos;load&apos; operation (&apos;dp_0_load_2&apos;, unique_paths/main.c:43) on array &apos;dp[0]&apos;, unique_paths/main.c:10."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;unique_paths&apos; (Loop: Loop 3.1): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between &apos;store&apos; operation (&apos;dp_0_addr_6_write_ln45&apos;, unique_paths/main.c:45) of variable &apos;add_ln45_1&apos;, unique_paths/main.c:45 on array &apos;dp[0]&apos;, unique_paths/main.c:10 and &apos;load&apos; operation (&apos;dp_0_load_2&apos;, unique_paths/main.c:43) on array &apos;dp[0]&apos;, unique_paths/main.c:10."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;unique_paths&apos; (Loop: Loop 3.1): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between &apos;store&apos; operation (&apos;dp_0_addr_6_write_ln45&apos;, unique_paths/main.c:45) of variable &apos;add_ln45_1&apos;, unique_paths/main.c:45 on array &apos;dp[0]&apos;, unique_paths/main.c:10 and &apos;load&apos; operation (&apos;dp_0_load_2&apos;, unique_paths/main.c:43) on array &apos;dp[0]&apos;, unique_paths/main.c:10."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;unique_paths&apos; (Loop: Loop 3.1): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between &apos;store&apos; operation (&apos;dp_0_addr_6_write_ln45&apos;, unique_paths/main.c:45) of variable &apos;add_ln45_1&apos;, unique_paths/main.c:45 on array &apos;dp[0]&apos;, unique_paths/main.c:10 and &apos;load&apos; operation (&apos;dp_0_load_2&apos;, unique_paths/main.c:43) on array &apos;dp[0]&apos;, unique_paths/main.c:10."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;unique_paths&apos; (Loop: Loop 3.1): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1)
+   between &apos;store&apos; operation (&apos;dp_0_addr_6_write_ln45&apos;, unique_paths/main.c:45) of variable &apos;add_ln45_1&apos;, unique_paths/main.c:45 on array &apos;dp[0]&apos;, unique_paths/main.c:10 and &apos;load&apos; operation (&apos;dp_0_load_2&apos;, unique_paths/main.c:43) on array &apos;dp[0]&apos;, unique_paths/main.c:10."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 6, Depth = 6."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 73.804 seconds; current allocated memory: 156.967 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-434]" key="HLS 200-434" tag="SDX" content="Only 3 loops out of a total 4 loops have been pipelined in this design."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 5.54 seconds; current allocated memory: 164.935 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;unique_paths&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;unique_paths/n&apos; to &apos;s_axilite &amp; ap_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;unique_paths/m&apos; to &apos;s_axilite &amp; ap_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;unique_paths/ans&apos; to &apos;s_axilite &amp; ap_vld&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;unique_paths&apos; to &apos;s_axilite &amp; ap_ctrl_hs&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_851" tag="" content="Bundling port &apos;return&apos;, &apos;n&apos; and &apos;ans&apos; to AXI-Lite port AXILiteS."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;unique_paths_mux_1007_32_1_1&apos; to &apos;unique_paths_mux_bkb&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;unique_paths_mux_bkb&apos;: 5 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;unique_paths&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 5.68 seconds; current allocated memory: 174.151 MB."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;unique_paths_dp_0_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:29 ; elapsed = 00:01:36 . Memory (MB): peak = 270.133 ; gain = 178.676"/>
+	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for unique_paths."/>
+	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for unique_paths."/>
+</Messages>

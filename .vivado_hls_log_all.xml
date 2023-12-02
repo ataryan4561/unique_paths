@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'unique_paths' (Loop: Loop 3.1): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('dp_0_addr_6_write_ln45', unique_paths/main.c:45) of variable 'add_ln45_1', unique_paths/main.c:45 on array 'dp[0]', unique_paths/main.c:10 and 'load' operation ('dp_0_load_2', unique_paths/main.c:43) on array 'dp[0]', unique_paths/main.c:10." projectName="unique_paths" solutionName="solution1" date="2023-12-02T15:47:06.293+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'unique_paths' (Loop: Loop 3.1): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('dp_0_addr_6_write_ln45', unique_paths/main.c:45) of variable 'add_ln45_1', unique_paths/main.c:45 on array 'dp[0]', unique_paths/main.c:10 and 'load' operation ('dp_0_load_2', unique_paths/main.c:43) on array 'dp[0]', unique_paths/main.c:10." projectName="unique_paths" solutionName="solution1" date="2023-12-02T15:47:05.034+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'unique_paths' (Loop: Loop 3.1): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('dp_0_addr_6_write_ln45', unique_paths/main.c:45) of variable 'add_ln45_1', unique_paths/main.c:45 on array 'dp[0]', unique_paths/main.c:10 and 'load' operation ('dp_0_load_2', unique_paths/main.c:43) on array 'dp[0]', unique_paths/main.c:10." projectName="unique_paths" solutionName="solution1" date="2023-12-02T15:47:00.641+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'unique_paths' (Loop: Loop 3.1): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('dp_0_addr_6_write_ln45', unique_paths/main.c:45) of variable 'add_ln45_1', unique_paths/main.c:45 on array 'dp[0]', unique_paths/main.c:10 and 'load' operation ('dp_0_load_2', unique_paths/main.c:43) on array 'dp[0]', unique_paths/main.c:10." projectName="unique_paths" solutionName="solution1" date="2023-12-02T15:47:00.532+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'unique_paths' (Loop: Loop 3.1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('dp_0_addr_6_write_ln45', unique_paths/main.c:45) of variable 'add_ln45_1', unique_paths/main.c:45 on array 'dp[0]', unique_paths/main.c:10 and 'load' operation ('dp_0_load_2', unique_paths/main.c:43) on array 'dp[0]', unique_paths/main.c:10." projectName="unique_paths" solutionName="solution1" date="2023-12-02T15:47:00.488+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'unique_paths' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('dp_99_addr_write_ln17', unique_paths/main.c:17) of constant 1 on array 'dp[99]', unique_paths/main.c:10 and 'store' operation ('dp_99_addr_write_ln17', unique_paths/main.c:17) of constant 1 on array 'dp[99]', unique_paths/main.c:10." projectName="unique_paths" solutionName="solution1" date="2023-12-02T15:47:00.062+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-3' (unique_paths/main.c:25:6) in function 'unique_paths' : &#xD;&#xA;&#xD;&#xA;the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop." projectName="unique_paths" solutionName="solution1" date="2023-12-02T15:46:54.566+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-104] Completely partitioning array 'dp' (unique_paths/main.c:10) accessed through non-constant indices on dimension 1 (unique_paths/main.c:43:6), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="unique_paths" solutionName="solution1" date="2023-12-02T15:46:45.693+0530" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
